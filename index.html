@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bojong Data Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: white;
+            text-align: center;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url('https://source.unsplash.com/1600x900/?server,data') no-repeat center center/cover;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero h1, .hero p, .hero a {
+            position: relative;
+            z-index: 2;
+        }
+        .btn-custom {
+            background: #ff4a4a;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+        .btn-custom:hover {
+            background: #d93c3c;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Bojong Data Center</h1>
+        <p>Solusi Server Handal untuk Bisnis dan Developer</p>
+        <a href="#services" class="btn btn-custom">Lihat Layanan</a>
+    </section>
+
+    <section id="services" class="container my-5">
+        <h2 class="text-center mb-4">Layanan Kami</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">VPS Hosting</h5>
+                        <p class="card-text">Server virtual dengan performa tinggi dan harga terjangkau.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Colocation</h5>
+                        <p class="card-text">Tempatkan server fisik Anda di data center kami yang aman.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Storage</h5>
+                        <p class="card-text">Simpan data Anda dengan aman dan akses kapan saja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Bojong Data Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
